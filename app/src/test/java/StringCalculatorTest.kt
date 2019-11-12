@@ -12,28 +12,30 @@ class StringCalculatorTest {
         stringCalculator = StringCalculator()
     }
 
+
     @Test
     fun returnsZeroIfStringIsEmpty(){
         evaluateStringCalculator("", "" ,0)
 
     }
+    
 
     @Test
     fun returnsTheNumberPassedAsParameterIfThereIsOnlyOne(){
-        evaluateStringCalculator("11", "",11)
+        evaluateStringCalculator("11", "/n",11)
 
 
     }
 
     @Test
     fun returnsTheSumOfTheNumberSeparatedByComa(){
-        evaluateStringCalculator("11/n22","" ,33)
+        evaluateStringCalculator("11,22","/n" ,33)
 
     }
 
     @Test
     fun returnsTheSumOfTheNumberSeparatedByComaToSmallNumbers(){
-        evaluateStringCalculator("1/n2","", 3)
+        evaluateStringCalculator("1/n2","/n", 3)
 
     }
 
